@@ -1,0 +1,11 @@
+{
+  "name": "@ryoppippi/cli-lightpanda-linux-arm64",
+  "version": "0.0.0",
+  "license": "MIT",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "arm64"
+  ]
+}
