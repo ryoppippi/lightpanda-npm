@@ -6,6 +6,9 @@
   "bin": {
     "lightpanda": "./bin/lightpanda"
   },
+  "scripts": {
+    "release": "bumpp && pnpm publish"
+  },
   "license": "MIT",
   "files": [
     "bin",
@@ -19,5 +22,8 @@
   },
   "dependencies": {
     "download-github-release": "^0.3.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
