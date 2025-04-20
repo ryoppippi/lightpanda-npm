@@ -1,6 +1,6 @@
 {
   "name": "@ryoppippi/lightpanda-npm",
-  "module": "index.ts",
+  "private": true,
   "type": "module",
   "packageManager": "pnpm@10.7.0",
   "scripts": {
@@ -12,11 +12,5 @@
     "tinyglobby": "^0.2.13",
     "tsx": "^4.19.3",
     "typescript": "^5"
-  },
-  "optionalDependencies": {
-    "@ryoppippi/cli-lightpanda-darwin-arm64": "workspace:",
-    "@ryoppippi/cli-lightpanda-darwin-x64": "workspace:",
-    "@ryoppippi/cli-lightpanda-linux-arm64": "workspace:",
-    "@ryoppippi/cli-lightpanda-linux-x64": "workspace:"
   }
 }

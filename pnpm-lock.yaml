@@ -23,19 +23,6 @@ importers:
       typescript:
         specifier: ^5
         version: 5.8.3
-    optionalDependencies:
-      '@ryoppippi/cli-lightpanda-darwin-arm64':
-        specifier: 'workspace:'
-        version: link:packages/cli-darwin-arm64
-      '@ryoppippi/cli-lightpanda-darwin-x64':
-        specifier: 'workspace:'
-        version: link:packages/cli-darwin-x64
-      '@ryoppippi/cli-lightpanda-linux-arm64':
-        specifier: 'workspace:'
-        version: link:packages/cli-linux-arm64
-      '@ryoppippi/cli-lightpanda-linux-x64':
-        specifier: 'workspace:'
-        version: link:packages/cli-linux-x64
 
   packages/cli-darwin-arm64: {}
 
@@ -44,6 +31,21 @@ importers:
   packages/cli-linux-arm64: {}
 
   packages/cli-linux-x64: {}
+
+  packages/lightpanda:
+    optionalDependencies:
+      '@ryoppippi/cli-lightpanda-darwin-arm64':
+        specifier: 'workspace:'
+        version: link:../cli-darwin-arm64
+      '@ryoppippi/cli-lightpanda-darwin-x64':
+        specifier: 'workspace:'
+        version: link:../cli-darwin-x64
+      '@ryoppippi/cli-lightpanda-linux-arm64':
+        specifier: 'workspace:'
+        version: link:../cli-linux-arm64
+      '@ryoppippi/cli-lightpanda-linux-x64':
+        specifier: 'workspace:'
+        version: link:../cli-linux-x64
 
 packages:
 
