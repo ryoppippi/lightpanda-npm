@@ -1,16 +1,22 @@
 {
   "name": "@ryoppippi/lightpanda-npm",
-  "private": true,
   "type": "module",
   "packageManager": "pnpm@10.7.0",
-  "scripts": {
-    "prepare": "tsx ./scripts/download-bin.ts"
+  "bin": {
+    "lightpanda": "./bin/lightpanda"
   },
+  "license": "MIT",
+  "files": [
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
   "devDependencies": {
     "@types/node": "^22.14.1",
-    "download-github-release": "^0.3.2",
-    "tinyglobby": "^0.2.13",
-    "tsx": "^4.19.3",
     "typescript": "^5"
+  },
+  "dependencies": {
+    "download-github-release": "^0.3.2",
+    "find-cache-directory": "^6.0.0"
   }
 }
