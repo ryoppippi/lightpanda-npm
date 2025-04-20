@@ -17,7 +17,6 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "download-github-release": "^0.3.2",
-    "find-cache-directory": "^6.0.0"
+    "download-github-release": "^0.3.2"
   }
 }
