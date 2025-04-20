@@ -12,11 +12,11 @@
     "./cli.mjs": "./dist/cli.mjs"
   },
   "scripts": {
-    "build": "unbuild",
-    "dev": "unbuild --stub",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
     "typecheck": "tsc --noEmit",
     "prepack": "pnpm build",
-    "prerelease": "publint && typecheck",
+    "prerelease": "npm run typecheck",
     "release": "bumpp && pnpm publish"
   },
   "license": "MIT",
@@ -29,8 +29,9 @@
     "@types/node": "^22.14.1",
     "bumpp": "^10.1.0",
     "publint": "^0.3.12",
+    "tsdown": "^0.9.1",
     "typescript": "^5",
-    "unbuild": "^3.5.0"
+    "unplugin-unused": "^0.4.4"
   },
   "dependencies": {
     "download-github-release": "^0.3.2",
