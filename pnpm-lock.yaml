@@ -18,6 +18,27 @@ importers:
       '@types/bun':
         specifier: latest
         version: 1.2.10
+    optionalDependencies:
+      '@ryoppippi/cli-lightpanda-darwin-arm64':
+        specifier: 'workspace:'
+        version: link:packages/cli-darwin-arm64
+      '@ryoppippi/cli-lightpanda-darwin-x64':
+        specifier: 'workspace:'
+        version: link:packages/cli-darwin-x64
+      '@ryoppippi/cli-lightpanda-linux-arm64':
+        specifier: 'workspace:'
+        version: link:packages/cli-linux-arm64
+      '@ryoppippi/cli-lightpanda-linux-x64':
+        specifier: 'workspace:'
+        version: link:packages/cli-linux-x64
+
+  packages/cli-darwin-arm64: {}
+
+  packages/cli-darwin-x64: {}
+
+  packages/cli-linux-arm64: {}
+
+  packages/cli-linux-x64: {}
 
 packages:
 

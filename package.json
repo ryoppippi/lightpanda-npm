@@ -8,5 +8,14 @@
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "find-up-simple": "^1.0.1"
+  },
+  "optionalDependencies": {
+    "@ryoppippi/cli-lightpanda-darwin-x64": "workspace:",
+    "@ryoppippi/cli-lightpanda-darwin-arm64": "workspace:",
+    "@ryoppippi/cli-lightpanda-linux-x64": "workspace:",
+    "@ryoppippi/cli-lightpanda-linux-arm64": "workspace:"
   }
 }
