@@ -1,21 +1,18 @@
 {
-  "name": "lightpanda-npm",
+  "name": "@ryoppippi/lightpanda-npm",
   "module": "index.ts",
   "type": "module",
-  "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
+    "@types/node": "^22.14.1",
+    "download-github-release": "^0.3.2",
+    "tinyglobby": "^0.2.13",
+    "tsx": "^4.19.3",
     "typescript": "^5"
   },
-  "dependencies": {
-    "find-up-simple": "^1.0.1"
-  },
   "optionalDependencies": {
-    "@ryoppippi/cli-lightpanda-darwin-x64": "workspace:",
     "@ryoppippi/cli-lightpanda-darwin-arm64": "workspace:",
-    "@ryoppippi/cli-lightpanda-linux-x64": "workspace:",
-    "@ryoppippi/cli-lightpanda-linux-arm64": "workspace:"
+    "@ryoppippi/cli-lightpanda-darwin-x64": "workspace:",
+    "@ryoppippi/cli-lightpanda-linux-arm64": "workspace:",
+    "@ryoppippi/cli-lightpanda-linux-x64": "workspace:"
   }
 }
