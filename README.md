@@ -1,15 +1,7 @@
 # lightpanda-npm
 
-To install dependencies:
+publish lightpanda to npm (unofficial)
 
-```bash
-bun install
-```
+Currently working on process, so not on npm yet.
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.2.9. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Download from 'pkg-pr-new'
