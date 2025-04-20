@@ -4,15 +4,24 @@
   "type": "module",
   "packageManager": "pnpm@10.7.0",
   "bin": {
-    "lightpanda": "./bin/lightpanda"
+    "lightpanda": "./dist/cli.mjs"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json",
+    "./cli.mjs": "./dist/cli.mjs"
   },
   "scripts": {
-    "prerelease": "publint",
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "typecheck": "tsc --noEmit",
+    "prepack": "pnpm build",
+    "prerelease": "publint && typecheck",
     "release": "bumpp && pnpm publish"
   },
   "license": "MIT",
   "files": [
-    "bin",
+    "dist",
     "README.md",
     "LICENSE"
   ],
@@ -20,7 +29,8 @@
     "@types/node": "^22.14.1",
     "bumpp": "^10.1.0",
     "publint": "^0.3.12",
-    "typescript": "^5"
+    "typescript": "^5",
+    "unbuild": "^3.5.0"
   },
   "dependencies": {
     "download-github-release": "^0.3.2",
