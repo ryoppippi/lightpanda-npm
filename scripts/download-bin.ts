@@ -24,13 +24,11 @@ for (const pkgPath of packagesPath) {
     ).then(async () => {
         /** rename binary to 'lightpanda' */
         const newPath = join(pkgPath, 'lightpanda');
-        const [ oldPath ] = await glob(join(pkgPath, 'lightpanda*'), { absolute: true });
+        const [oldPath] = await glob(join(pkgPath, 'lightpanda-*'), { absolute: true });
         if (!oldPath) {
           throw new Error(`Failed to find binary in ${pkgPath}`);
         }
-        return fs.rename(oldPath, newPath).catch(() => {
-          console.error(`Failed to rename ${oldPath} to ${newPath}`);
-        });
+        fs.rename(oldPath, newPath);
       })
   )
 }

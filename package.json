@@ -2,6 +2,10 @@
   "name": "@ryoppippi/lightpanda-npm",
   "module": "index.ts",
   "type": "module",
+  "packageManager": "pnpm@10.7.0",
+  "scripts": {
+    "prepare": "tsx ./scripts/download-bin.ts"
+  },
   "devDependencies": {
     "@types/node": "^22.14.1",
     "download-github-release": "^0.3.2",
