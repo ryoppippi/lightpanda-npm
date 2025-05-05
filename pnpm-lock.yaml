@@ -28,7 +28,7 @@ importers:
         specifier: ^0.10.2
         version: 0.10.2(publint@0.3.12)(typescript@5.8.3)(unplugin-unused@0.4.4)
       typescript:
-        specifier: ^5
+        specifier: ^5.8.3
         version: 5.8.3
       unplugin-unused:
         specifier: ^0.4.4

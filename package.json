@@ -30,7 +30,7 @@
     "bumpp": "^10.1.0",
     "publint": "^0.3.12",
     "tsdown": "^0.10.2",
-    "typescript": "^5",
+    "typescript": "^5.8.3",
     "unplugin-unused": "^0.4.4"
   },
   "dependencies": {
