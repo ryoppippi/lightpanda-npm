@@ -26,13 +26,13 @@ importers:
         version: 0.3.12
       tsdown:
         specifier: ^0.11.2
-        version: 0.11.4(publint@0.3.12)(typescript@5.8.3)(unplugin-unused@0.4.4)
+        version: 0.11.4(publint@0.3.12)(typescript@5.8.3)(unplugin-unused@0.5.0)
       typescript:
         specifier: ^5
         version: 5.8.3
       unplugin-unused:
-        specifier: ^0.4.4
-        version: 0.4.4
+        specifier: ^0.5.0
+        version: 0.5.0
 
 packages:
 
@@ -762,13 +762,9 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
-  unplugin-unused@0.4.4:
-    resolution: {integrity: sha512-UrXdGkPb9BRuqIpXj254Auz+kZhAMJ9q9xj9nVqGB3O9Hgc+WnIijkZLVut2IWct/aiO6ZhBCsYha1vlcKYn5A==}
-    engines: {node: '>=18.12.0'}
-
-  unplugin-utils@0.2.4:
-    resolution: {integrity: sha512-8U/MtpkPkkk3Atewj1+RcKIjb5WBimZ/WSLhhR3w6SsIj8XJuKTacSP8g+2JhfSGw0Cb125Y+2zA/IzJZDVbhA==}
-    engines: {node: '>=18.12.0'}
+  unplugin-unused@0.5.0:
+    resolution: {integrity: sha512-czXny3h/P/Tl5ZOnV5tSf6kswAniHjgJF0slpzBPLkq0zGGKDYa1jgWMAdbWJNu7B1YSmBJY4zf3Q/v9w0+/cg==}
+    engines: {node: '>=20.18.0'}
 
   unplugin@2.3.2:
     resolution: {integrity: sha512-3n7YA46rROb3zSj8fFxtxC/PqoyvYQ0llwz9wtUPUutr9ig09C8gGo5CWCwHrUzlqC1LLR43kxp5vEIyH1ac1w==}
@@ -1463,7 +1459,7 @@ snapshots:
       fdir: 6.4.4(picomatch@4.0.2)
       picomatch: 4.0.2
 
-  tsdown@0.11.4(publint@0.3.12)(typescript@5.8.3)(unplugin-unused@0.4.4):
+  tsdown@0.11.4(publint@0.3.12)(typescript@5.8.3)(unplugin-unused@0.5.0):
     dependencies:
       ansis: 4.0.0
       cac: 6.7.14
@@ -1480,7 +1476,7 @@ snapshots:
       unconfig: 7.3.2
     optionalDependencies:
       publint: 0.3.12
-      unplugin-unused: 0.4.4
+      unplugin-unused: 0.5.0
     transitivePeerDependencies:
       - '@oxc-project/runtime'
       - supports-color
@@ -1503,18 +1499,12 @@ snapshots:
 
   undici-types@6.21.0: {}
 
-  unplugin-unused@0.4.4:
+  unplugin-unused@0.5.0:
     dependencies:
       js-tokens: 9.0.1
       picocolors: 1.1.1
       pkg-types: 2.1.0
       unplugin: 2.3.2
-      unplugin-utils: 0.2.4
-
-  unplugin-utils@0.2.4:
-    dependencies:
-      pathe: 2.0.3
-      picomatch: 4.0.2
 
   unplugin@2.3.2:
     dependencies:
